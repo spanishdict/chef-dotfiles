@@ -4,7 +4,7 @@ default['dotfiles'] = {
   :enabled_standard => true,
   :standard_repository => 'https://github.com/spanishdict/dotfiles',
   :files => [
-             ".bashrc"
+             ".bashrc",
              ".screenrc"
             ],
 
