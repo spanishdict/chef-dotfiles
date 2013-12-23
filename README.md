@@ -29,7 +29,14 @@ Include this dotfiles section in a new user's data bag:
     }
 
 This will install the standard
-[SpanishDict dotfiles](https://github.com/spanishdict/dotfiles).
+[SpanishDict dotfiles](https://github.com/spanishdict/dotfiles), which are those
+listed in the default `files` attribute of this cookbook:
+
+    :files => [
+               ".bashrc"
+               ".screenrc"
+              ],
+
 
 This dotfiles section can be customized -- see below.
 

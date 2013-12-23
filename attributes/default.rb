@@ -1,8 +1,16 @@
 default['dotfiles'] = {
-  :files => [], # Customize per user.
-  :standard_repository => 'https://github.com/spanishdict/dotfiles', # Customize per organization.
-  :enabled_standard => true, # Customize per organization.
-  :data_bag => 'users', # Customize per organization.
-  :custom_dotfiles_dir => '.custom_dotfiles', # Customizer per user.
-  :custom_dotfiles_repo_prefix => nil # Customize per user.
+  :data_bag => 'users',
+  # By default, enable the standard dotfiles.
+  :enabled_standard => true,
+  :standard_repository => 'https://github.com/spanishdict/dotfiles',
+  :files => [
+             ".bashrc"
+             ".screenrc"
+            ],
+
+  # In per-user data bag, users can optionally add custom dotfiles.
+  :enabled_custom => false,
+  :custom_dotfiles => [],
+  :custom_dotfiles_dir => '.custom_dotfiles',
+  :custom_dotfiles_repo_prefix => nil
 }
